@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Min Temperatures at CDMX</title>
+<!--
+    <script src="src/main/resources/plotly-latest.min.js"></script>
+-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'Min Temperatures at CDMX',
+    height: 700,
+    width: 900,
+
+};
+
+var trace0 =
+{
+x: ['2007-06','2007-05','2007-09','2007-07','2007-03','2007-04','2007-08','2007-01','2007-02','2007-10'],
+y: [127.0, 124.0, 123.0, 122.0, 116.0, 115.0, 115.0, 96.0, 80.0, 56.0],
+orientation: 'v',
+type: 'bar',
+name: '',
+};
+
+        var data = [ trace0];
+Plotly.newPlot(target_target, data, layout);    </script>
+
+</body>
+</html>
