@@ -92,11 +92,7 @@ public class Application {
 	    // Removing extra spaces 
 			String st;
 			while ((st = br.readLine()) != null) {
-				st = st.replace("     ", " ");
-//				st = st.replaceAll("\\s+", " ");
-				st = st.replace("   ", " ");
-				st = st.replace("  ", " ");
-				st = st.replace(" ", ",");
+				st = st.replaceAll("\\s+", ",");
 				st = st + "\n";
 				mainText = mainText + st;
 				
@@ -197,9 +193,6 @@ public class Application {
 		} catch(IOException e) {
 			System.out.println("Error reading main file");
 		}
-			
-// As data was filtered and cleaned this data could be used, along with its graphical representation, to identify a relationship
-// possible relationships between air temperature and wind speed rates.
 
 	}
 
